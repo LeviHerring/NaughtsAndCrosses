@@ -17,6 +17,8 @@ public class ButtonScript : MonoBehaviour
         
     }
 
+   
+
     // Update is called once per frame
     void Update()
     {
@@ -31,11 +33,13 @@ public class ButtonScript : MonoBehaviour
         if(turn%2 == 0)
         {
             Instantiate(cross);
+            cross.SetActive(true);
         }
         else
         {
            
             Instantiate(naught);
+            naught.SetActive(true);
         }
         isClicked = false;
         turn = turn + 1; 

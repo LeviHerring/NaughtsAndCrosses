@@ -6,30 +6,34 @@ public class FightingButtonScript : MonoBehaviour
 {
 
     bool isClicked = false;
-    int turn = 1; 
+    int turn = 1;
+
+    int naughtHealth = 50;
+    int crossHealth = 40;
 
     public GameObject enemyText;
-    public GameObject HeroText; 
+    public GameObject HeroText;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnClickAttack()
     {
-        isClicked = true; 
+        isClicked = true;
 
-        if(turn%2 == 0)
+        if (turn % 2 == 0)
         {
             enemyText.SetActive(false);
             HeroText.SetActive(true);
+
         }
         else
         {
@@ -47,6 +51,16 @@ public class FightingButtonScript : MonoBehaviour
     }
 
     public void OnClickRun()
+    {
+
+    }
+
+    public void NaughtHealth()
+    {
+
+    }
+
+    public void CrossHealth()
     {
 
     }
